@@ -1,4 +1,4 @@
-// diffs.js：算差（基线：一律给零）
+// diffs.js：算一对相邻差（后一个减前一个，带符号）
 export function gapAt(values, spot) {
-  return 0;
+  return values[spot + 1] - values[spot];
 }
