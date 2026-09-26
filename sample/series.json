@@ -1,0 +1,5 @@
+{
+  "tolerance_error_code": "E_BAD_TOLERANCE",
+  "tolerance": 5,
+  "values": [3, 8, 2, 10, 4, 9]
+}
