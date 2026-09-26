@@ -1,4 +1,6 @@
-// diffs.js：算差（基线：一律给零）
+// diffs.js：算差
 export function gapAt(values, spot) {
-  return 0;
+  if (!Array.isArray(values) || values.length < 2) return 0;
+  if (spot < 0 || spot >= values.length - 1) return 0;
+  return values[spot + 1] - values[spot];
 }
